@@ -1,5 +1,6 @@
 plugins {
     id("pitdev.android-library-compose-convention")
+    alias(libs.plugins.compose.compiler)
 }
 
 android {

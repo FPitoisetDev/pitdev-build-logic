@@ -4,6 +4,7 @@ val buildVersionCode: String by project
 val version: String by project
 
 plugins {
+    alias(libs.plugins.compose.compiler)
     id("pitdev.android-compose-convention")
 }
 

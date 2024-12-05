@@ -1,60 +1,60 @@
 [versions]
 
-androidGradlePlugin = "8.7.1"
-androidxActivity = "1.8.2"
-androidxAppCompat = "1.6.1"
+androidGradlePlugin = "8.7.3"
+androidxActivity = "1.9.3"
+androidxAppCompat = "1.7.0"
 androidxArchCore = "2.2.0"
-androidxCollection = "1.4.0"
-androidxComposeBom = "2024.04.00"
-androidxConstraintLayout = "2.1.4"
-androidxCore = "1.12.0"
-androidxFragment = "1.6.2"
+androidxCollection = "1.4.5"
+androidxComposeBom = "2024.11.00"
+androidxConstraintLayout = "2.2.0"
+androidxCore = "1.15.0"
+androidxFragment = "1.8.5"
 androidxHilt = "1.2.0"
 androidxLegacySupportV4 = "1.0.0"
-androidXLifecyle = "2.7.0"
-androidxNavigation = "2.7.7"
+androidXLifecyle = "2.8.7"
+androidxNavigation = "2.8.4"
 androidxPreference = "1.2.1"
 androidxRoom = "2.6.1"
 androidxSqlite = "2.4.0"
 androidxSwipeRefreshLayout = "1.1.0"
-androidxTestEspresso = "3.5.1"
-androidxTestExt = "1.1.5"
-androidxTestExtTruth = "1.5.0"
-androidxTestMonitor = "1.6.1"
-androidxTestOrchestrator = "1.4.2"
-androidxTestRules = "1.5.0"
-androidxTestRunner = "1.5.2"
+androidxTestEspresso = "3.6.1"
+androidxTestExt = "1.2.1"
+androidxTestExtTruth = "1.6.0"
+androidxTestMonitor = "1.7.2"
+androidxTestOrchestrator = "1.5.1"
+androidxTestRules = "1.6.1"
+androidxTestRunner = "1.6.2"
 
-composeKotlinCompilerExtensionVersion = "1.5.11"
-crashlyticsPlugin = "2.9.9"
+composeKotlinCompilerExtensionVersion = "1.5.15"
+crashlyticsPlugin = "3.0.2"
 
-desugar = "2.0.4"
+desugar = "2.1.3"
 
-firebaseBom = "32.8.1"
+firebaseBom = "33.6.0"
 
-googleAndroidMaterial = "1.11.0"
-googleAndroidPlayIntegrity = "1.3.0"
-googleCodeGson = "2.10.1"
+googleAndroidMaterial = "1.12.0"
+googleAndroidPlayIntegrity = "1.4.0"
+googleCodeGson = "2.11.0"
 googleDaggerHilt = "2.51.1"
-googleServices = "4.4.1"
-googleTruth = "1.4.2"
+googleServices = "4.4.2"
+googleTruth = "1.4.4"
 
 jacoco = "0.8.12"
 javaxAnnotationApi = "1.3.2"
-jetbrainsKotlinx = "1.8.0"
+jetbrainsKotlinx = "1.9.0"
 junit = "4.13.2"
-junit5 = "5.10.2"
+junit5 = "5.11.3"
 
-navigationSafeArgs = "2.7.7"
+navigationSafeArgs = "2.8.4"
 
-kotlin = "1.9.23"
-kspPlugin = "1.9.23-1.0.20"
+kotlin = "2.1.0"
+kspPlugin = "2.1.0-1.0.29"
 
 timber = "5.0.1"
 
-mockk = "1.13.10"
+mockk = "1.13.13"
 
-robolectric = "4.12.1"
+robolectric = "4.14"
 
 sonarqubePlugin = "5.0.0.4638"
 squareupMoshi = "1.15.1"
@@ -63,9 +63,9 @@ squareupRetrofit2 = "2.11.0"
 
 jacocoAggregate = "2.2.0"
 
-compileSdk = "34"
+compileSdk = "35"
 minSdk = "24"
-targetSdk = "34"
+targetSdk = "35"
 
 [libraries]
 
@@ -252,6 +252,8 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 jacoco-aggreate = { id = "io.github.gmazzo.test.aggregation.coverage", version.ref = "jacocoAggregate"}
 
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
 crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "crashlyticsPlugin" }
 
 dagger-hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "googleDaggerHilt" }
@@ -268,3 +270,5 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "kspPlugin" }
 navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationSafeArgs" }
 
 sonarqube = { id = "org.sonarqube", version.ref = "sonarqubePlugin" }
+
+
